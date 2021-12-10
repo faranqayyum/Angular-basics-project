@@ -1,0 +1,15 @@
+
+<div class="sidebar">
+    <img src="assets/img/the2.png">
+    <div style="text-align: center; font-size: 1.5em; color: black;">Welcome to EventHub home page. Come here to
+        check it with your favorite Events.</div>
+    <div style="text-align: center">
+        <button class="btnCreatePost" (click)="goToCreatePost()">Create Post</button>
+    </div>
+    <div style="text-align: center">
+        <button class="btnCreateEvent" (click)="goToCreateSubreddit()">Create Event </button>
+    </div>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/list-subreddits">View All The Events</a>
+    </div>
+</div> 

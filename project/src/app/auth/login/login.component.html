@@ -1,0 +1,61 @@
+<div class="bg">
+    <div class="container">
+     <div class="row">
+        <div class="col-md-7 ">
+            <h1 class="text-left"> Event Hub </h1>
+            <p class="text-left">Event Hubs is a fully managed, real-time data 
+                ingestion service that is simple, trusted and scalable. Stream
+                millions of events per second from any source to build dynamic 
+                data pipelines and immediately respond to business challenges.</p>
+        </div>
+ 
+     <div class="col-md-5 lo5">
+         <div class="row">
+             <div class="col-md-0">
+                 <h3 class="text-center"> Login</h3>
+             </div>
+             
+          <div class="card-body">
+          <form [formGroup]="loginForm" (ngSubmit)="login()" >
+            <div class="form-group row username"  >
+            <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+            <div class="col-md-6" >
+                <input type="text" id="user_name" class="form-control" [formControlName]="'username'" name="user_name" required
+                    autofocus>
+                <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched">
+                   Please provide a valid username
+                </span>                                    
+            </div>
+         </div>
+
+         <div class="form-group row password" >
+            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+            <div class="col-md-6">
+                <input type="password" id="password" class="form-control" [formControlName]="'password'" name="password" required>
+                <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched " >
+                          Please provide a valid Password
+                </span>                                
+            </div>
+         </div>
+         <span class="col-md-6 offset-md-4">
+             <button type="submit" class="login">
+                Login
+             </button>
+             <span class="lo1">New User? <a class="lo0" routerLink="/sign-up">Sign Up
+             </a></span>
+ 
+            </span>
+            <div class="login-failed" *ngIf='this.isError'>
+                <p class="login-failed-text">Login Failed. Please check your credentials and try again.</p>   
+           </div>
+             <div class="login-failed"  *ngIf="this.registerSuccessMessage.length > 0">
+                 <p class="register-success-text">{{registerSuccessMessage}}</p>    
+            </div>
+            </form>
+         </div>
+         </div>
+     </div>
+   </div>
+  
+   </div>
+ </div>

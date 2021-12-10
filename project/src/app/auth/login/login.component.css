@@ -1,0 +1,99 @@
+.login-failed-text{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;    
+    color: red;
+}
+.register-success-text{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold; 
+    color: bisque;
+}
+
+.username{ 
+    margin-bottom:  10px;
+    color: white;
+}
+.password{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.lo1{
+    color: white;
+    padding-left: 10px;
+}
+
+.login {
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+  }
+
+.bg{
+    background-image: url(../image/eventhub.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif ;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    margin-top: 250px;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+
+h3{
+    font-size: 25px;
+    color: white;
+}
+.user-pencil{
+    font-size: 35px;
+    color: white;
+    float: right;
+    margin-top: 25px;
+}
+.col-md-5{
+    margin-top: 224px;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+.form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-top: 15px;
+    height: 40px;
+    color: white;
+}
+
+
+
+

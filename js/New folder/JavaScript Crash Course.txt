@@ -1,0 +1,28 @@
+In variable we can store datatype 
+{ string, boolean, number}
+
+In string we can Represent the variable
+
+(``) back ticks 
+(`${}`)
+
+
+Local Storage & Session Storage:-
+
+localStorage Object: - 
+
+The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year.
+In localStorage the memory capcity is more than compare to session storage  
+In localstorage array donot add 
+if we want to store   
+how to add array {
+create variable 
+we can use json.stringify()
+}
+
+
+
+
+The sessionStorage Object: - 
+
+The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.

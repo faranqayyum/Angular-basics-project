@@ -1,0 +1,32 @@
+.container{
+    padding-top: 20px;
+
+}
+.b{
+    color: black;
+}
+
+
+.name{
+    padding-bottom: 10px;
+    color: beige;
+    
+
+}
+.p{
+    color: white;
+}
+
+.bg{
+    background-image: url(../image/eventhub.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif ;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+

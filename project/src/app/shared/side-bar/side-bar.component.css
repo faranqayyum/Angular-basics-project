@@ -1,0 +1,46 @@
+.sidebar img{
+    height: 140px;
+    margin-left: 12px;
+    width: 280px;
+}
+.sidebar{
+    width: 312px;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.8);
+    color: #878A8C;
+    position: relative;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btnCreatePost, .btnCreateEvent{
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;    
+    opacity: 1;
+    width: 288px;
+    height: 34px;
+}
+
+.btnCreateEvent{
+    margin-top: 5px;
+    color: #0079D3;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+

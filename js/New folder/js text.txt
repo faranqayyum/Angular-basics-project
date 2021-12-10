@@ -1,0 +1,620 @@
+
+let countEl = document.getElementById("count-el") 
+console.log(countEl)
+let count = 0
+function increment() {
+    count = count + 1
+    countEl.innerText = count    
+}
+
+Dom 
+document object Model
+object is datatype of javascript 
+
+
+variables = let is a variables
+strings = ""
+functions = involve by them from html
+
+
+two string in a functions 
+let firstName = "Hi, there"
+let lastName = "linda"
+
+function greetingLinda (){
+    console.log(firstName + " , " + lastName + " ! " )
+    
+}
+greetingLinda()
+
+
+rendering the error message 
+
+let errorParagraph = document.getElementById("error")
+console.log(errorParagraph)
+
+function purchase(){
+    console.log("button")
+    errorParagraph.textContent = "Something went wrong, please try again"
+}
+(textContent = it show the text on a page)
+
+
+// document.getElementById("count").innerText = 5
+
+// let count = 5
+// count = count + 1
+// console.log(count)
+
+// Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
+// Decrease it down to 25, and then finally increase it to 70
+// Console.log the value after each step
+
+// let bonusPoints = 50
+// console.log(bonusPoints)
+
+// bonusPoints = bonusPoints + 50
+// console.log(bonusPoints)
+
+// bonusPoints = bonusPoints - 75
+// console.log(bonusPoints)
+
+// bonusPoints = bonusPoints + 45
+// console.log(bonusPoints)
+
+
+
+calculator 
+
+let num1 = 8
+let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+
+let sumEl = document.getElementById("sum-el")
+console.log(sumEl)
+
+function add(){
+    let result =num1 + num2
+    sumEl.textContent = "Sum: " + result
+
+}
+function subtract(){
+    let result = num1 - num2
+    sumEl.textContent = "Sum: " + result
+}
+function divide(){
+    let result = num1 / num2
+    sumEl.textContent = "Sum: " + result
+}
+function multiply(){
+    let result = num1 * num2
+    sumEl.textContent = "Sum: " + result
+}
+
+
+push and pop method
+let messages = [
+    "Hey, how's it going?",        
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately."
+]
+
+
+let newMessage = "Same here!"
+
+messages.push(newMessage) 
+console.log(messages)
+
+messages.pop()
+console.log(messages)
+
+for and array 
+
+let cards = [7, 3, 9]
+
+for(let i=0; i<cards.length; i += 1 ){
+    console.log(cards[i])
+}
+
+all conecpt for loop and ifelse
+
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
+let cards = [firstCard, secondCard]
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+function getRandomCard(){
+    return 5
+}
+
+
+
+function startGame() {
+    renderGame()
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: " 
+    
+    for (let  i = 0; i < cards.length; i ++){
+        cardsEl.textContent += cards[i] + " "
+    }
+    
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+
+function newCard() {
+    let card = getRandomCard()
+    sum += card
+     cards.push(card)
+     console.log(card)    
+    renderGame()
+}
+
+concept of random()
+math.random gave the number between 0.000 to 0.999
+let randomNumber = Math.random()
+
+console.log(randomNumber)
+
+
+
+
+
+
+random number concept 
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
+let cards = [firstCard, secondCard]
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+function getRandomCard(){
+    return Math.floor(Math.random() * 6) + 1 
+}
+
+
+
+function startGame() {
+    renderGame()
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: " 
+    
+    for (let  i = 0; i < cards.length; i ++){
+        cardsEl.textContent += cards[i] + " "
+    }
+    
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+
+function newCard() {
+    let card = getRandomCard()
+    sum += card
+     cards.push(card)
+     console.log(card)    
+    renderGame()
+}
+
+ 
+logical operator And (&&) both statement must be ture or false
+let hasCompletedCourse = true
+let givesCertificate = true
+
+if (hasCompletedCourse === true && givesCertificate === true) {
+    generateCertificate()
+}
+
+function generateCertificate() {
+    console.log("Generating certificate....")
+}
+
+
+logical operator OR ( || ) one must be true
+let likesDocumentaries = true
+let likesStartups = true
+
+if (likesDocumentaries === false || likesStartups === false ){
+    recommendMovie()
+}
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!")
+}
+
+
+
+___
+// Objects - store data in-depth - composite / complex data type
+let player ={
+    name: "faran",
+    chips: 200
+}
+let cards = []
+let sum = 0
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+let playerEL = document.getElementById("player-el")
+
+playerEL.textContent = player.name + " : $ " + player.chips
+
+function getRandomCard(){
+    return Math.floor(Math.random() * 6) + 1 
+    if( randomNumber > 10 ){
+        return 10
+    } 
+    else if (randomNumber === 1){
+        return 11 
+    }
+    else {
+        return randomNumber
+    }
+   
+
+}
+
+
+
+function startGame() {
+  isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
+    
+    renderGame()
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: " 
+    
+    for (let  i = 0; i < cards.length; i ++){
+        cardsEl.textContent += cards[i] + " "
+    }
+    
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+
+array is define by []
+objects can contains key value and also datatype 
+boolean  is true or false
+if else statment is key 
+comparison operators
+logical operators &&(and)  ||(OR)
+for loops    
+the math object  (randomNumber = Math.Floor(Math.Random)
+return statements
+
+_______
+
+Objects and functions
+
+let player = {
+    name: "faran",
+    age: 27,
+    country: "karachi"
+}
+
+function logData(){
+    console.log (player.name + " is " + player.age + " years  old  and  lives "  + player.country)
+}
+logData()
+__________
+
+if else
+
+let age = 90
+if ( age < 6 ){
+    console.log("free")   
+}else if (age < 18){
+    console.log("child discount")
+}else if (age < 27){
+    console.log("student discount")
+}
+else{
+    console.log("senior")
+}
+
+__________
+
+
+Loops and arrays
+
+
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+for ( let i = 0; i < largeCountries.length; i++){
+    console.log(" - " + largeCountries[i])
+}
+
+
+__________
+
+
+
+push, pop, unshift, shift challenge
+
+
+let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+largeCountries.pop()
+largeCountries.push("Pakistan")
+largeCountries.shift()
+largeCountries.unshift("Tuvalu")
+
+console.log(largeCountries)
+
+______________________
+
+logical operators 
+
+
+let dayOfMonth = 13
+let weekday = "Tuesday"
+
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱")
+}
+
+
+____
+
+randomIndex
+
+let hands = ["rock", "paper", "scissor"]
+
+// Create a function that returns a random item from the array
+
+function getHand() {
+    let randomIndex = Math.floor( Math.random() * 3)
+    return hands[randomIndex]
+}
+
+console.log( getHand() )
+
+________
+
+Sorting fruits
+
+
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+
+// Create a function that puts the apples onto the appleShelf
+// and the oranges onto the orangeShelf. Use a for loop,
+// a conditional statement, and the textContent property.
+
+function sortFruit() {
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else if (fruit[i] === "🍊") {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+}
+
+sortFruit()
+
+
+
+__________________
+
+Eventlistener ()
+
+let inputBtn = document.getElementById("input-btn")
+inputBtn.addEventListener("click", function(){
+    console.log("button clicked from addEventListener")
+}
+) 
+
+let 
+const cannot be reassigned 
+
+Push the value from the input field
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
+})
+__________
+Render the leads in the unordered list
+
+
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+// 2. Grab the unordered list and store it in a const variable called ulEl
+
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
+})
+
+
+for (let i = 0; i < myLeads.length; i++) {
+    console.log(myLeads[i])
+}
+________________________________
+inner html 
+const container = document.getElementById("container")
+
+container.innerHTML="<button>Buy!</button>"
+_______________________________
+
+use createElement() and append() instead of innerHTML
+
+
+// Let's try a different method!
+for (let i = 0; i < myLeads.length; i++) {
+    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+    // create element
+    // set text content
+    // append to ul
+    const li = document.createElement("li")
+    li.textContent = myLeads[i]
+    ulEl.append(li)
+}
+________________________
+
+
+Create the render function
+
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value)
+    // 2. Call the renderLeads() function
+    renderLeads()
+})
+
+// 1. Wrap the code below in a renderLeads() function
+function renderLeads() {
+    let listItems = ""
+    for (let i = 0; i < myLeads.length; i++) {
+        listItems += "<li>" + myLeads[i] + "</li>"
+    }
+    ulEl.innerHTML = listItems  
+}
+_____________________________
+create the input field 
+
+inputEl.value = ""
+
+
+
+________________________
+
+string even more dynamic 
+const recipient = "James"
+const sender = "faranqayyum"
+
+// Refactor the email string to use template strings
+const email = `Hey 
+                 ${recipient} How is it going? Cheers ${sender}
+                 `
+
+console.log(email)
+
+
+______________________
+
+localstorage 
+
+localStorage.setItem("myLeads", "faran")
+console.log(localStorage.getItem("myLeads"))
+localStorage.clear("myLeads")
+
+
+// 1. Save a key-value pair in localStorage
+// 2. Refresh the page. Get the value and log it to the console
+// 3. Clear localStorage
+
+// HINTS:
+// localStorage.setItem(key, value)
+// localStorage.getItem(key)
+// localStorage.clear()
+// PS: both key and value need to be strings
+// if we want to pass we can it by( ` by this `)
+___________________
+string arrays in localstring 
+
+
+let myLeads = `["www.awesomelead.com"]`
+
+// 1. Turn the myLeads string into an array
+myLeads = JSON.parse(myLeads)
+// 2. Push a new value to the array
+myLeads.push("www.lead2.com")
+// 3. Turn the array into a string again
+myLeads = JSON.stringify(myLeads)
+// 4. Console.log the string using typeof to verify that it's a string
+console.log(typeof myLeads)
+
+
+____________________
+Write your first function parameter
+
+const welcomeEl = document.getElementById("welcome-el")
+
+function greetUser(name){
+    welcomeEl.textContent = "Welcome back, " + name + " "
+}
+greetUser("Per Faran Qayyum")
+_______________
+
+//.                parameters are insider  the function
+function greetUser(greeting, name) { 
+    welcomeEl.textContent = `${greeting}, ${name} 👋`
+}
+
+//.        arguments outside the function 
+greetUser("Howdy", "James")
+
+
+function add(num1, num2) {
+    return num1 + num2
+}
+
+add(3, 4)

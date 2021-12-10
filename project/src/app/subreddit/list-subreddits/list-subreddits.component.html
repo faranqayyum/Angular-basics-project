@@ -1,0 +1,17 @@
+<div class="bg">
+<div class="container">
+  <div class="row">
+    <hr />
+    <div class="col-md-9">
+      <h2 style="color: lightblue;"> List of Event</h2>
+      <hr>
+      <ul>
+        <li *ngFor="let subreddit of subreddits" >
+            <a routerLink="/view-subreddit/{{subreddit.id}}"style="color: lightblue;" >{{subreddit.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </div>
+</div>
+

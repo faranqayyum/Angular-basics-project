@@ -1,0 +1,7 @@
+.note{
+    padding:  10 10 10 10;
+    margin-bottom: 14px;
+}
+button, input, optgroup, select, textarea {
+    margin: 14px;
+}

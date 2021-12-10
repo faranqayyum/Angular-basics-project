@@ -1,0 +1,43 @@
+<!-- <div class="login-wrapper">
+    <div class="card">
+        <div class="card-body">
+            
+            <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+                <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
+
+                <label for="inputlogin" class="sr-only">Login </label>
+                <input type="text" id="inputLogin" class="form-control" name="login" placeholder="Login" ngModel
+                    required autofocus >
+
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password"
+                    autocomplete="on" ngModel required >
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+                <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
+                    Please fill all fields.
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+                    Invalid user or password.
+                </div>
+               
+            </form>
+         
+        </div>
+    </div>
+</div> -->
+<div>
+    <div class="phpkida-main">
+        <h2>Sign In Now</h2>
+            <form action="#" method="post">
+                <input type="email" class="ggg" name="Email" placeholder="E-MAIL" required="">
+                <input type="password" class="ggg" name="Password" placeholder="PASSWORD" required="">
+                <span><input type="checkbox" />Remember Me</span>
+                <span class="span-right"><a href="#">Forgot Password?</a></span>
+                    <div class="clearfix"></div>
+                    <input type="submit" value="Sign In" name="login">
+            </form>
+            <p>Don't Have an Account ?<a href="registration.html">Create an account</a></p>
+    </div>
+    </div>
